@@ -184,6 +184,7 @@ button:focus {
   border-radius: 1rem;
   cursor: default;
   box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
+  width: 100%;
 }
 
 .major__icon {
@@ -221,4 +222,43 @@ button:focus {
 .job__period {
   color: var(--color-primary);
   font-size: 0.8rem;
+}
+
+/* Skills */
+#skills {
+  background-color: var(--color-primary-variant);
+  color: var(--color-text);
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  margin: 2rem 3rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.skills__title {
+  color: var(--color-accent);
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.skills__coding {
+  grid-row: span 2;
+  padding: 1rem;
+  background-color: var(--color-primary);
+}
+
+.skills__tools {
+  padding: 1rem;
+}
+
+.skills__etc {
+  padding: 1rem;
+  background-color: var(--color-primary);
+  /* 따로 색상을 안주어도 이렇게 할 수 있다. */
+  filter: brightness(150%);
 }
