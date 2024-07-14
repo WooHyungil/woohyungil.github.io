@@ -79,7 +79,7 @@ button:focus {
 
 /* Header */
 .header {
-  background-color: #050a13;
+  background-color: transparent;
   position: fixed;
   top: 0;
   width: 100%;
@@ -88,6 +88,12 @@ button:focus {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
+  transition: all 250ms ease;
+}
+
+.header--dark {
+  background-color: var(--color-primary);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .header__logo {
@@ -340,7 +346,7 @@ button:focus {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .project {
@@ -376,7 +382,7 @@ button:focus {
 
 /* 가상요소 넣기 */
 .project__title:after {
-  content: "";
+  content: "sadfg";
   display: block;
   position: relative;
   left: 50%;
@@ -388,8 +394,9 @@ button:focus {
 }
 
 /* Testimonial */
+
 .testimonials {
-  margin: 3rem;
+  margin: 10rem;
 }
 
 .testimonial {
