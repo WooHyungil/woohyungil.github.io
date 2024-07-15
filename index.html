@@ -1,50 +1,48 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- SEO -->
-    <title>WOO-HYEONGIL&#39;s Portfolio</title>
-    <style>
-      * {
-        font-family: "Freesentation-9Black";
-        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2")
-          format("woff2");
-        font-weight: 100;
-        font-style: normal;
-      }
-    </style>
+    <title>W.H.I. Portfolio</title>
     <meta
       name="description"
-      content="Portfolio for word-renowned software engineer HYEONGIL"
+      content="Portfolio for world-renowned software
+    engineer Ellie"
     />
-    <meta name="author" content="WOO-HYEONGIL" />
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-    <!-- OG(Open Graph Data) -->
-    <meta property="og:title" content="형일이의 포트폴리오" />
+    <meta name="author" content="Ellie" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <!-- OG (Open Graph Data) -->
+    <meta property="og:title" content="우형일의 포트폴리오" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="배포후 생성된 URL" />
-    <meta property="og:iamge" content="배포후 생성된 이미지 URL" />
-    <script></script>
+    <meta property="og:image" content="배포후에 생성된 이미지 URL" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/9eb162ac0d.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- JavaScript -->
-    <script type="module" src="./src/main.js" defer></script>
-    <script type="module" src="./src/projects.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Javascript -->
+    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="src/projects.js" defer></script>
+    <script type="module" src="./src/active_menu.js" defer></script>
   </head>
-  <!--Font Awesome-->
-  <script
-    src="https://kit.fontawesome.com/f7a8c76135.js"
-    crossorigin="anonymous"
-  ></script>
   <body>
     <!-- Header -->
     <header class="header">
       <div class="header__logo">
-        <img class="header__logo__img" src="images/favicon.ico" alt="logo" />
-        <h1 class="header__logo__title">
-          <a href="#">WOO-HYEONGIL Portfolio</a>
-        </h1>
+        <img class="header__logo__img" src="./images/favicon.ico" alt="logo" />
+        <h1 class="header__logo__title"><a href="#">W.H.I.</a></h1>
       </div>
       <nav class="header__nav">
         <ul class="header__menu">
@@ -69,29 +67,37 @@
         <div class="home__container">
           <img
             class="home__avatar"
-            src="images/Profile-removebg-preview.png"
-            alt="WOO-HYEONGIL Portfolio"
+            src="./images/Profile-removebg-preview.png"
+            alt="Ellie's profile"
           />
           <h2 class="home__title">
-            Hello <br />I&#39;m
-            <strong class="home__title--strong">Dream Coder</strong>
-            WOO-HYEONGIL
+            <strong class="home__title--strong">Development</strong>과
+            <strong class="home__title--strong">Design</strong>에<br />
+            대한
+            <strong class="home__title--strong">열정</strong>
+            을
+            <strong class="home__title--strong">탐구</strong>
+            하며 <br />Hyeong-il
           </h2>
           <p class="home__description">
-            A software engineer currently residing in Seoul
+            저는 현재 서울에서 거주하고 있으며, 개발과 디자인에 대한 큰 관심과
+            <br />
+            꿈을 가지고 있습니다. 끊임없이 도전하고 배우며 성장하는 것을
+            즐기며,<br />
+            이 분야에서의 경험과 기회를 항상 열망하고 있습니다.<br />
           </p>
-          <a class="home__contact" href="#contect">Contact Me</a>
+          <a class="home__contact" href="#contact">Contact Me</a>
         </div>
       </section>
       <!-- About -->
       <section id="about" class="section max-container">
         <h2 class="title">About me</h2>
         <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum rem
-          quas<br />
-          obcaecati ab quaerat illum odit necessitatibus tempora itaque ipsa<br />
-          quasi asperiores odio ratione officia, rerum laboriosam a, ex
-          tempore.<br />
+          새로운 기술을 배우고 문제를 해결하는 것을 즐기며,<br />성장 가능성을
+          끊임없이 모색하고 있습니다.<br />협업을 통해 함께 발전하고 배우는 것을
+          중요시하며,<br />열정과 열린 마음으로 새로운 도전에 임하고
+          있습니다.<br />함께 일하게 되면 많은 것을 배우고 기여할 수 있을
+          것이라고 자신합니다.<br />함께해요!
         </p>
         <ul class="majors">
           <li class="major">
@@ -102,38 +108,52 @@
           <li class="major">
             <i class="fa-solid fa-mobile major__icon"></i>
             <p class="major__title">Mobile</p>
-            <p>JAVA, JSP</p>
+            <p>Java, JSP</p>
           </li>
           <li class="major">
             <i class="fa-solid fa-server major__icon"></i>
             <p class="major__title">Back-end</p>
-            <p>JAVA, JSP, JavaScript, MySQL</p>
+            <p>Java, MySQL, Orcle</p>
           </li>
         </ul>
         <ul class="jobs">
           <li class="job">
             <img
-              src="./images/portfolio_other_images_bce4acb2e3/portfolio-other-images/jobs/google.png"
-              alt="goole logo"
+              src="./images/jobs/한국정보교육원_logo.jpg"
+              alt="한국정보교육원_logo"
             />
             <div>
-              <p class="job__name">한정교에서 공부함</p>
-              <p class="job__period">2024.01 ~ 2024.07</p>
+              <p class="job__name">
+                Cloud-utilized full-stack development completed with Java Spring
+                React
+              </p>
+              <p class="job__period">2024/01 ~ 2024/07</p>
+            </div>
+          </li>
+          <li class="job">
+            <img src="./images/jobs/테라텍_logo.png" alt="테라텍_logo" />
+            <div>
+              <p class="job__name">
+                테라텍 -Manufacturing, packaging and management supervision
+              </p>
+              <p class="job__period">2020/12 ~ 2023/10</p>
             </div>
           </li>
           <li class="job">
             <img
-              src="./images/portfolio_other_images_bce4acb2e3/portfolio-other-images/jobs/samsung.png"
+              src="./images/jobs/와이엔일렉_logo.jpg"
+              alt="와이엔일렉_logo"
             />
             <div>
-              <p class="job__name">Samsung as Software Engineer</p>
-              <p class="job__period">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Quia<br />
-                numquam quis distinctio, reiciendis doloribus, quae eius<br />
-                molestiae iusto pariatur molestias beatae neque. Aut repellat<br />
-                culpa rem tempora quaerat beatae corporis?<br />
-              </p>
+              <p class="job__name">와이엔일렉 -drawing design</p>
+              <p class="job__period">2020/07 ~ 2020/09</p>
+            </div>
+          </li>
+          <li class="job">
+            <img src="./images/jobs/eocojoin_logo.png" alt="eocojoin_logo" />
+            <div>
+              <p class="job__name">Eco-Join -Manufacturing and Packaging</p>
+              <p class="job__period">2019/11 ~ 2020/02</p>
             </div>
           </li>
         </ul>
@@ -144,46 +164,48 @@
           <h2 class="title">My Skills</h2>
           <p class="description">Skills & Attributes</p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam,
-            non<br />
-            placeat commodi debitis animi fugit similique excepturi possimus
-            nihil<br />
-            qui neque nam earum? Similique a et, non magnam unde quasi!<br />
+            안녕하세요! 저는 프로그래밍을 사랑하는 신입 개발자입니다.
+            JavaScript, HTML, CSS, Java, MySQL, 그리고 JSP에 대해 기초적인
+            지식을 보유하고 있으며, 웹 개발에 큰 관심을 가지고 있습니다. 새로운
+            기술을 배우고 문제를 해결하는 것을 즐기며, 성장 가능성을 끊임없이
+            모색하고 있습니다. 협업을 통해 함께 발전하고 배우는 것을 중요시하며,
+            열정과 열린 마음으로 새로운 도전에 임하고 있습니다. 함께 일하게 되면
+            많은 것을 배우고 기여할 수 있을 것이라고 자신합니다. 함께해요!
           </p>
           <div class="skills">
             <section class="skills__coding">
-              <h3 class="skills__title">Conding Skills.</h3>
+              <h3 class="skills__title">Coding Skills</h3>
               <ul>
                 <li class="bar">
                   <div class="bar__metadata">
-                    <span>HTML</span><span>80%</span>
+                    <span>HTML</span><span>70%</span>
                   </div>
                   <div class="bar__bg">
-                    <div class="bar__value" style="width: 80%"></div>
+                    <div class="bar__value" style="width: 70%"></div>
                   </div>
                 </li>
                 <li class="bar">
                   <div class="bar__metadata">
-                    <span>CSS</span><span>80%</span>
+                    <span>CSS</span><span>68%</span>
                   </div>
                   <div class="bar__bg">
-                    <div class="bar__value" style="width: 80%"></div>
+                    <div class="bar__value" style="width: 68%"></div>
                   </div>
                 </li>
                 <li class="bar">
                   <div class="bar__metadata">
-                    <span>JavaScript</span><span>60%</span>
+                    <span>JavaScript</span><span>50%</span>
                   </div>
                   <div class="bar__bg">
-                    <div class="bar__value" style="width: 60%"></div>
+                    <div class="bar__value" style="width: 50%"></div>
                   </div>
                 </li>
                 <li class="bar">
                   <div class="bar__metadata">
-                    <span>JSP</span><span>60%</span>
+                    <span>JSP</span><span>45%</span>
                   </div>
                   <div class="bar__bg">
-                    <div class="bar__value" style="width: 60%"></div>
+                    <div class="bar__value" style="width: 45%"></div>
                   </div>
                 </li>
                 <li class="bar">
@@ -196,30 +218,30 @@
                 </li>
                 <li class="bar">
                   <div class="bar__metadata">
-                    <span>MySQL</span><span>43%</span>
+                    <span>MySQL</span><span>45%</span>
                   </div>
                   <div class="bar__bg">
-                    <div class="bar__value" style="width: 43%"></div>
+                    <div class="bar__value" style="width: 45%"></div>
                   </div>
                 </li>
               </ul>
             </section>
             <section class="skills__tools">
-              <h3 class="skills__title">Tools.</h3>
+              <h3 class="skills__title">Tools</h3>
               <ul>
                 <li>Visual Studio Code</li>
-                <li>IntellJ</li>
-                <li>zz</li>
-                <li>zz</li>
-                <li>zz</li>
+                <li>Eclipse</li>
+                <li>Eclipse web</li>
+                <li>Mysql workbench 8.0</li>
               </ul>
             </section>
             <section class="skills__etc">
-              <h3 class="skills__title">ETC.</h3>
+              <h3 class="skills__title">Etc</h3>
               <ul>
                 <li>Git</li>
-                <li>Scrum Master</li>
-                <li>Math</li>
+                <li>Notion</li>
+                <li>Figma</li>
+                <li>cafe24</li>
               </ul>
             </section>
           </div>
@@ -229,205 +251,210 @@
       <section id="work" class="section">
         <div class="max-container">
           <h2 class="title">My work</h2>
-          <p class="description">Project</p>
+          <p class="description">Projects</p>
           <ul class="categories">
             <li>
-              <button class="category category--selected">
-                ALL <span class="category__count">8</span>
+              <button class="category category--selected" data-category="all">
+                All <span class="category__count">8</span>
               </button>
             </li>
             <li>
-              <button class="category">
-                Front-end <span class="category__count">3</span>
+              <button class="category" data-category="full-stack">
+                full-stack <span class="category__count">1</span>
               </button>
             </li>
             <li>
-              <button class="category">
-                Back-end <span class="category__count">3</span>
+              <button class="category" data-category="Github">
+                Github <span class="category__count">2</span>
               </button>
             </li>
             <li>
-              <button class="category">
+              <button class="category" data-category="mobile">
                 Mobile <span class="category__count">2</span>
               </button>
             </li>
           </ul>
           <ul class="projects">
-            <li class="project">
-              <a href="#" target="_blank">
+            <li class="project" data-type="full-stack">
+              <a href="http://hiss0723.cafe24.com" target="_blank">
                 <img
-                  src="images/portfolio_other_images_bce4acb2e3/portfolio-other-images/projects/project1.webp"
-                  alt="project1"
+                  src="./images/projects/코딩모험가_logo.png"
+                  alt="project"
                   class="project__img"
                 />
                 <div class="project__metadata">
-                  <h3 class="project__title">Project #1</h3>
-                  <p>Clone Coding with HTML, CSS</p>
+                  <h3 class="project__title">Project</h3>
+                  <p>Java, JSP, MySQL, <br />JavaScript, HTML, CSS</p>
                 </div>
               </a>
             </li>
-            <li class="project">
-              <a href="#" target="_blank">
+            <li class="project" data-type="Github">
+              <a href="https://github.com/WooHyungil" target="_blank">
                 <img
-                  src="images/portfolio_other_images_bce4acb2e3/portfolio-other-images/projects/project2.webp"
-                  alt="project1"
+                  src="./images/projects/github.png"
+                  alt="github"
                   class="project__img"
                 />
                 <div class="project__metadata">
-                  <h3 class="project__title">Project #2</h3>
-                  <p>Clone Coding with HTML, CSS</p>
-                </div></a
-              >
+                  <h3 class="project__title">Github</h3>
+                  <p>Github_URL</p>
+                </div>
+              </a>
             </li>
-            <li class="project">
-              <a href="#" target="_blank">
+            <li class="project" data-type="Github">
+              <a
+                href="https://github.com/WooHyungil/Collection-of-Certifications"
+                target="_blank"
+              >
                 <img
-                  src="images/portfolio_other_images_bce4acb2e3/portfolio-other-images/projects/project3.webp"
-                  alt="project1"
+                  src="images/projects/project3.webp"
+                  alt="자격증"
                   class="project__img"
                 />
                 <div class="project__metadata">
-                  <h3 class="project__title">Project #3</h3>
-                  <p>Clone Coding with HTML, CSS</p>
-                </div></a
-              >
+                  <h3 class="project__title">자격증</h3>
+                  <p>Github_자격증</p>
+                </div>
+              </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="mobile">
               <a href="#" target="_blank">
                 <img
-                  src="images/portfolio_other_images_bce4acb2e3/portfolio-other-images/projects/project4.webp"
-                  alt="project1"
+                  src="images/projects/project4.webp"
+                  alt="project4"
                   class="project__img"
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #4</h3>
                   <p>Clone Coding with HTML, CSS</p>
-                </div></a
-              >
+                </div>
+              </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
-                  src="images/portfolio_other_images_bce4acb2e3/portfolio-other-images/projects/project5.webp"
-                  alt="project1"
+                  src="images/projects/project5.webp"
+                  alt="project5"
                   class="project__img"
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #5</h3>
                   <p>Clone Coding with HTML, CSS</p>
-                </div></a
-              >
+                </div>
+              </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="back-end">
               <a href="#" target="_blank">
                 <img
-                  src="images/portfolio_other_images_bce4acb2e3/portfolio-other-images/projects/project6.webp"
-                  alt="project1"
+                  src="images/projects/project6.webp"
+                  alt="project6"
                   class="project__img"
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #6</h3>
                   <p>Clone Coding with HTML, CSS</p>
-                </div></a
-              >
+                </div>
+              </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="mobile">
               <a href="#" target="_blank">
                 <img
-                  src="images/portfolio_other_images_bce4acb2e3/portfolio-other-images/projects/project7.webp"
-                  alt="project1"
+                  src="images/projects/project7.webp"
+                  alt="project7"
                   class="project__img"
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #7</h3>
                   <p>Clone Coding with HTML, CSS</p>
-                </div></a
-              >
+                </div>
+              </a>
             </li>
-            <li class="project">
+            <li class="project" data-type="front-end">
               <a href="#" target="_blank">
                 <img
-                  src="images/portfolio_other_images_bce4acb2e3/portfolio-other-images/projects/project8.webp"
-                  alt="project1"
+                  src="images/projects/project8.webp"
+                  alt="project8"
                   class="project__img"
                 />
                 <div class="project__metadata">
                   <h3 class="project__title">Project #8</h3>
                   <p>Clone Coding with HTML, CSS</p>
-                </div></a
-              >
+                </div>
+              </a>
             </li>
           </ul>
         </div>
       </section>
-      <!-- Testimonial -->
+      <!-- Testimonials -->
       <section id="testimonial" class="section max-container">
         <h2 class="title">Testimonial</h2>
         <p class="description">See what they say about me</p>
         <ul class="testimonials">
           <li class="testimonial">
             <img
-              src="./images/portfolio_other_images_bce4acb2e3/portfolio-other-images/testimonials/people1.webp"
+              src="./images/testimonials/jesus.jpg"
               alt="people1"
               class="testimonial__img"
             />
             <div class="testimonial__bubble">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Saepe<br />
-                itaque tempora tenetur id officia autem iste aliquid
-                voluptate<br />
-                ab, neque nesciunt rem modi aperiam quae maiores laborum
-                debitis<br />
-                sunt minima.
+                너희는 먼저 그의 나라와 그의 의를 구하라 그리하면 이 모든 것을
+                너희에게 더하시리라 그러므로 내일 일을 위하여 염려하지 말라 내일
+                일은 내일 염려할 것이요 한 날 괴로움은 그 날에 족하니라
               </p>
               <p>
-                <a href="#" class="testimonial__bubble__name">James Kim</a>
-                /Goolge
+                <a href="#" class="testimonial__bubble__name"
+                  >마태복음 6:33-34
+                </a>
               </p>
             </div>
           </li>
           <li class="testimonial">
             <img
-              src="./images/portfolio_other_images_bce4acb2e3/portfolio-other-images/testimonials/people2.webp"
-              alt="people1"
+              src="./images/testimonials/니모를 찾아서_도리.jpg"
+              alt="안성두원공업고등학교(학생부_3학년)"
               class="testimonial__img"
             />
             <div class="testimonial__bubble">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Saepe<br />
-                itaque tempora tenetur id officia autem iste aliquid
-                voluptate<br />
-                ab, neque nesciunt rem modi aperiam quae maiores laborum
-                debitis<br />
-                sunt minima.
+                다정한 성격으로 약한 급우들에 대한 관심과 이해심이 많아 몸이
+                아픈 친구를 앞장서서 도와주며 청소시간에도 다른 학생들을
+                도와주는 등 급우들을 배려하는 모습을 보임. 성품이 착하고 예의가
+                바르며 자신의 장단점을 면밀하게 분석하여 단점을 보완하기 위해
+                성실한 태도로 노력함. 주관이 뚜렷하고 자신의 능력을 과시하여
+                드러내기보다는 겸손함으로 스스로를 낮출 줄 알며, 대인관계에
+                있어서의 예절도 바른편이라 자신의 주장이나 생각을 조심스럽지만
+                또한 조리 있게 전달하는 능력을 가지고 있음.
               </p>
               <p>
-                <a href="#" class="testimonial__bubble__name">James Kim</a>
-                /Goolge
+                <a href="#" class="testimonial__bubble__name"
+                  >안성두원공업고등학교</a
+                >
+                (3학년) 담임 정정인
               </p>
             </div>
           </li>
           <li class="testimonial">
             <img
-              src="./images/portfolio_other_images_bce4acb2e3/portfolio-other-images/testimonials/people3.webp"
-              alt="people1"
+              src="images/testimonials/people3.webp"
+              alt="안성두원공업고등학교(학생부_미술)"
               class="testimonial__img"
             />
             <div class="testimonial__bubble">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Saepe<br />
-                itaque tempora tenetur id officia autem iste aliquid
-                voluptate<br />
-                ab, neque nesciunt rem modi aperiam quae maiores laborum
-                debitis<br />
-                sunt minima.
+                표현에 적합한 재료와 용구를 잘 선택하며 미술의 다양한 조형요소와
+                원리를 자유롭게 활용하여 효과를 극대화하는 능력이 탁월함. 수행
+                과정에서 나타나는 문제들을 자기 주도적으로 해결하여 표현하며,
+                주제의 특징, 의도, 목적에 적합한 조형 요소와 원리를 창의적으로
+                활용하여 표현할 수 있음. 핸드폰 케이스 디자인 제작에서 자신의
+                경험을 작품과 잘 접목시키며 주제에 따른 구성을 창의적으로
+                표현하는 데 소질이 있음.
               </p>
               <p>
-                <a href="#" class="testimonial__bubble__name">James Kim</a>
-                /Goolge
+                <a href="#" class="testimonial__bubble__name"
+                  >안성두원공업고등학교</a
+                >
+                (미술창작부분)
               </p>
             </div>
           </li>
@@ -436,37 +463,39 @@
       <!-- Arrow up -->
       <aside>
         <a class="arrow-up" href="#home" title="back to top">
-          <i class="fa-solid fa-arrow-up"> </i>
+          <i class="fa-solid fa-arrow-up"></i>
         </a>
       </aside>
     </main>
     <!-- Footer -->
     <footer id="contact" class="section">
-      <h2 class="title">Let&#39;s talk</h2>
-      <p class="description">hiss0723@naver.com</p>
-      <ul class="contact__links">
-        <li>
-          <a
-            class="contact__link"
-            href="http://hiss0723.cafe24.com"
-            title="my project link"
-            target="_blank"
-          >
-            <i class="fa-solid fa-briefcase"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            class="contact__link"
-            href="https://github.com/WooHyungil/js_first_project.git"
-            title="my github"
-            target="_blank"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </li>
-      </ul>
-      <p>＠Dream Coding WOo, - All right haha</p>
+      <div class="max-container">
+        <h2 class="title">Let&#39;s talk</h2>
+        <p class="description">hiss0723@naver.com</p>
+        <ul class="contact__links">
+          <li>
+            <a
+              class="contact__link"
+              href="https://github.com/dream-ellie"
+              target="_blank"
+              title="my github link"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="contact__link"
+              href="https://github.com/dream-ellie"
+              target="_blank"
+              title="my linkedin link"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <p>ⓒDream Coding Ellie - All rights reserved</p>
+      </div>
     </footer>
   </body>
 </html>

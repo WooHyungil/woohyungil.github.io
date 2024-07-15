@@ -19,7 +19,6 @@
 }
 
 * {
-  /* 너비와 높이는 직관적으로 */
   box-sizing: border-box;
 }
 
@@ -35,6 +34,7 @@ p,
 ul {
   margin: 0;
 }
+
 ul {
   list-style: none;
   padding: 0;
@@ -52,7 +52,7 @@ button {
 }
 
 button:focus {
-  outline: 1px solid var(--color-accent);
+  outline: 1px solid transparent;
 }
 
 /* Common */
@@ -68,13 +68,12 @@ button:focus {
 
 .title {
   font-size: 2.5rem;
-  font-weight: 800;
   margin: 1rem 0;
 }
 
 .description {
   font-size: 1.5rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 
 /* Header */
@@ -88,7 +87,7 @@ button:focus {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  transition: all 250ms ease;
+  transition: all 300ms ease;
 }
 
 .header--dark {
@@ -109,6 +108,15 @@ button:focus {
 
 .header__logo__title {
   font-size: 1.8rem;
+}
+
+.header__toggle {
+  display: none;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1.3rem;
+  right: 1rem;
 }
 
 .header__menu {
@@ -143,7 +151,6 @@ button:focus {
 .home__avatar {
   width: 250px;
   height: 250px;
-  /* 이미지 배율 */
   object-fit: cover;
   border-radius: 100%;
   border: 3px solid var(--color-accent);
@@ -159,16 +166,17 @@ button:focus {
 }
 
 .home__description {
-  font-size: 1.3rem;
+  font-size: 1rem;
+  filter: brightness(60%);
 }
 
 .home__contact {
   display: inline-block;
   background-color: var(--color-accent);
+  color: var(--color-black);
   margin: 2rem;
   padding: 0.5rem 1rem;
   font-weight: bold;
-  color: var(--color-black);
   border-radius: 4px;
 }
 
@@ -184,6 +192,13 @@ button:focus {
   justify-content: space-between;
   gap: 1rem;
   margin: 2.5rem 0;
+}
+
+#about > .description {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--color-gray);
 }
 
 .major {
@@ -214,6 +229,7 @@ button:focus {
 }
 
 .jobs {
+  margin-top: 5rem;
   text-align: start;
 }
 
@@ -222,6 +238,13 @@ button:focus {
   align-items: center;
   gap: 8px;
   margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+}
+
+.job > img {
+  width: 180px;
+  height: 80px;
 }
 
 .job__name {
@@ -245,8 +268,10 @@ button:focus {
   margin: 2rem 3rem;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
-    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 .skills__title {
@@ -268,7 +293,6 @@ button:focus {
 .skills__etc {
   padding: 1rem;
   background-color: var(--color-primary);
-  /* 따로 색상을 안주어도 이렇게 할 수 있다. */
   filter: brightness(150%);
 }
 
@@ -348,7 +372,13 @@ button:focus {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 1.5rem;
+  gap: 1rem;
+  transition: all 250ms ease-out;
+}
+
+.projects.anim-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(20px);
 }
 
 .project {
@@ -359,6 +389,7 @@ button:focus {
 
 .project__img {
   width: 100%;
+  background-color: var(--color-white);
 }
 
 .project__metadata {
@@ -382,9 +413,8 @@ button:focus {
   transform: translateY(0px);
 }
 
-/* 가상요소 넣기 */
 .project__title:after {
-  content: "sadfg";
+  content: "";
   display: block;
   position: relative;
   left: 50%;
@@ -396,7 +426,6 @@ button:focus {
 }
 
 /* Testimonial */
-
 .testimonials {
   margin: 3rem;
 }
@@ -415,11 +444,13 @@ button:focus {
 .testimonial__img {
   width: 150px;
   height: 150px;
+  object-fit: cover;
   border-radius: 100%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .testimonial__bubble {
+  text-align: start;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -431,7 +462,7 @@ button:focus {
   filter: brightness(70%);
 }
 
-/* Arrow Up */
+/* Arrow up */
 .arrow-up {
   background-color: var(--color-primary);
   position: fixed;
@@ -443,7 +474,7 @@ button:focus {
   border-radius: 100%;
   text-align: center;
   box-shadow: 5px 5px 0px 0px var(--color-accent);
-  transition: opacity 250ms ease-in;
+  transition: opacity 300ms ease-in;
 }
 
 /* Footer */
@@ -470,8 +501,9 @@ button:focus {
 
 @media screen and (max-width: 768px) {
   .section {
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
   }
+
   .title {
     font-size: 2rem;
   }
@@ -486,25 +518,20 @@ button:focus {
     background-color: var(--color-primary);
   }
 
+  .header__toggle {
+    display: block;
+  }
+
   .header__menu {
     display: none;
     flex-direction: column;
     text-align: center;
-    padding: 1rem 4rem;
+    margin: 1rem 4rem;
     gap: 1rem;
   }
 
   .header__menu.open {
     display: flex;
-  }
-
-  .header__toggle {
-    display: block;
-    color: var(--color-white);
-    font-size: 1.5rem;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
   }
 
   .header__nav {
@@ -524,6 +551,7 @@ button:focus {
     flex-direction: column;
     align-items: center;
   }
+
   .major {
     max-width: 25rem;
   }
@@ -551,6 +579,7 @@ button:focus {
   .testimonial {
     flex-direction: column;
   }
+
   .testimonial:nth-child(even) .testimonial__img {
     order: 0;
   }
