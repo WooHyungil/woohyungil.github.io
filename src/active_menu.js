@@ -23,16 +23,33 @@ const navItems = sectionIds.map((id) =>
   document.querySelector(`[href="${id}"]`)
 );
 
-console.log(navItems);
+const visibleSections = sectionIds.map(() => false);
 
 const options = {};
 const observer = new IntersectionObserver(observerCallback, options);
 sections.forEach((section) => observer.observe(section));
 
 function observerCallback(entries) {
+  // flag 변수
+  let selectLastOne;
   entries.forEach((entry) => {
-    console.log(entry.target);
-    console.log(entry.isIntersecting);
-    console.log(entry.intersectionRatio);
+    const index = sectionIds.indexOf(`#${entry.target.id}`);
+    visibleSections[index] = entry.isIntersecting;
+    selectLastOne =
+      index == sectionIds.length - 1 &&
+      entry.isIntersecting &&
+      entry.IntersectionRatio >= 0.99;
   });
+  console.log(visibleSections);
+  console.log("무조건 라스트 섹션 : ", selectLastOne);
+
+  const navIndex = selectLastOne
+    ? sectionIds.length - 1
+    : findFirstIntersecting(visibleSections);
+  console.log(sectionIds[navIndex]);
+}
+
+function findFirstIntersecting(intersections) {
+  const index = intersections.indexOf(true);
+  return index >= 0 ? index : 0;
 }
