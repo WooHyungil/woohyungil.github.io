@@ -1,0 +1,14 @@
+canvas {
+  border: 1px solid black;
+  background-image: url("background.jpg");
+  background-size: cover;
+}
+
+#box {
+  position: absolute;
+  top: 5%;
+  left: 35%;
+  background-color: aqua;
+  width: 900px;
+  height: 100px;
+}
